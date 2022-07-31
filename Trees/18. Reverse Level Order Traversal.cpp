@@ -1,7 +1,9 @@
 vector<int> reverseLevelOrder(Node *root)
 {
     // code here
+   
     vector<int>v;
+     if(root== NULL)return v;
     queue<Node *>q;
     q.push(root);
     
