@@ -8,3 +8,16 @@ void mirror(Node* node) {
    return swap(node->left,node->right);
    
  }
+
+//convert binary tree into sum tree
+
+int toSumTree(Node *root)
+{
+   if(root == NULL) return 0;
+   
+   int a =  toSumTree(root->left);
+   int b = toSumTree(root->right);
+   int x = root -> data;
+   root -> data = a+b;
+   return a+b+x;
+}
