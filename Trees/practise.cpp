@@ -9,7 +9,7 @@ void mirror(Node* node) {
    
  }
 
-//convert binary tree into sum tree
+//Convert binary tree into sum tree
 
 int toSumTree(Node *root)
 {
@@ -21,3 +21,5 @@ int toSumTree(Node *root)
    root -> data = a+b;
    return a+b+x;
 }
+
+//
