@@ -21,5 +21,3 @@ int toSumTree(Node *root)
    root -> data = a+b;
    return a+b+x;
 }
-
-//
